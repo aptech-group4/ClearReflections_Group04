@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script>
+      // Hàm cho nút more
+      function moreFunction() {
+        var x = document.getElementById("myMore");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+      </script>
+</head>
+<body>
+    <header>
+        <table>
+          <tr>
+            <td class="logo">
+              <a href="Index.html"><img style="max-width: auto; object-fit: auto; height: auto;" width="100px" src="Logo1.png"></a>
+            </td>
+            <td class="navbar">
+              <div>
+                <a href="#">Shops</a>
+                <a href="contactus.html"                      >Contact Us</a>
+                <a href="Product.html"  class="active-nav"  >Products</a>
+                <a href="Index.html"                        >Home</a>
+              </div>
+            </td>
+            <td class="call">
+              <button type="button" class="btn btn-success btn-lg" id="call">CALL ME! <i class="glyphicon glyphicon-earphone"></i></button>    
+            </td>
+          </tr>
+        </table>
+    </header>  
+      <table style="border-collapse: collapse; width: 100%;">
+        <tbody>
+        <tr>
+        <td id="menu" style="width: 20% top">
+            <div id="danhmuc_left">
+                <ul class="list_news_r">    
+                    <li><a href="#" onclick="filterProduct('all')"><h4><span style="font-weight: bold;">ALL</span></h4></a></li>
+
+                        <li><a href="#" class="file_menu"><h4 style="font-weight: bold; font-size: 16pt;"><i class="glyphicon glyphicon-expand"></i> Category </h4></a>
+                          <ul class="dm_cap2">
+                              <li><a href="#" onclick="filterProduct('Drawing/LivingRoomMirrors')"><label>Drawing/Living Room Mirrors</label></a></li>
+                              <li><a href="#" onclick="filterProduct('BathroomMirrors')"><label>Bathroom Mirrors</label></a></li>
+                              <li><a href="#" onclick="filterProduct('DressingMirrors')"><label>Dressing Mirrors</label></a></li>
+                              <li><a href="#" onclick="filterProduct('BedroomMirrors')"><label>Bedroom Mirrors</label></a></li>
+                          </ul>       
+                        </li>
+
+                        <li><a href="#"><h4 style="font-weight: bold; font-size: 16pt;"><i class="glyphicon glyphicon-expand"></i> Materials</h4></a>
+                          <ul class="dm_cap2">
+                              <li><a href="#" onclick="filterProduct('Woodenframed')"><label>Wooden framed</label></a></li>
+                              <li><a href="#" onclick="filterProduct('AcrylicBordered')"><label>Acrylic bordered</label></a></li>
+                              <li><a href="#" onclick="filterProduct('MetalBordered')"><label>Metal bordered</label></a></li>
+                              <li><a href="#" onclick="filterProduct('DecorativeMirrors')"><label>Decorative mirrors</label></a></li>
+                              <li><a href="#" onclick="filterProduct('LEDMirrors')"><label>LED mirrors</label></a></li>
+                              <li><a href="#" onclick="filterProduct('BluetoothMirrors')"><label>Bluetooth mirrors</label></a></li>
+                          </ul>
+                        </li>
+                        <!-- More -->
+                        <a onclick="moreFunction()">More:...</a>
+                        <div id="myMore" style="display: none;">
+                          <ul type ="none"><i class="glyphicon glyphicon-expand"></i> Brand
+                            <li><input type="radio" name="Brand" onclick="filterProduct('Viglacera')"> Viglacera</li>
+                            <li><input type="radio" name="Brand" onclick="filterProduct('Inax')"> Inax</li>
+                            <li><input type="radio" name="Brand" onclick="filterProduct('Citybuilding')"> Citybuilding</li>
+                          </ul>
+                          <ul type ="none"><i class="glyphicon glyphicon-expand"></i> Shape
+                            <li><input type="radio" name="Shape" onclick="filterProduct('Circle')"> Circle</li>
+                            <li><input type="radio" name="Shape" onclick="filterProduct('Rectangle')"> Rectangle</li>
+                          </ul>
+                        </div>
+        
+                    </li>
+                </ul>        
+            </div>
+        
+        </td>
+        <td style="width: 80%;"> <center> <div id="products"></div></center>
+        </div></td>
+        </tr>
+        </tbody>
+        </table>
+    <script src="script.js"></script>
+    <footer class="footer container" align="center">
+        &copy; 2022 CR COPYRIGHT ALL RIGHTS RESERVED
+    </footer>
+</body>
+</html>

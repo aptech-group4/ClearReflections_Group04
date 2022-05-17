@@ -2,18 +2,21 @@
 Supervisor : LÊ THANH NHÂN
 Semester : I
 Batch No : T1.2012.E1
-Group No: : 01
+Group No: : 04
 List Of Member:
-Lê Văn A (Student0000001)
-Trần Văn Sê (Student0000002)
-Nguyễn Thị Bê (Student0000003)
+Phạm Trung Nhân (Student1362614)
+Trần Anh Tú (Student1359476)
+Trần Cao Tiến Sĩ (Student1359463)
+Trần Phạm Duy Thanh (Student1359464)
+
+
 =======================================
 
-Documentations : https://github.com/L3nhan/doodle_group01/tree/main/Documentations
+Documentations : https://github.com/aptech-group4/ClearReflections_Group04/tree/main/documentations
 
 =======================================
 
-Published website : https://l3nhan.github.io/doodle_group01/
+Published website : https://aptech-group4.github.io/ClearReflections_Group04/
 
 =======================================
 
